@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-blackColor text-text p-4 flex justify-between items-center font-poppins">
+    <nav className="bg-blackColor max-md:flex-col text-text p-4 flex justify-between items-center font-poppins">
       <div className="text-2xl font-bold">CELEXTA</div>
-      <div className="space-x-4">
+      <div className="space-x-4 ">
         <Link to="/" className="hover:text-primary">
           Home
         </Link>

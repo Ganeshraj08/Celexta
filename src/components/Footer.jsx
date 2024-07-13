@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-tertiary text-text p-9 font-poppins">
       <div className="flex-col flex items-center">
         <h4 className="font-bold  footer-head ">Contact Us</h4>
-        <div className="flex justify-around  items-start w-full my-9">
+        <div className="flex justify-around max-md:flex-col max-md:gap-5  items-start w-full my-9">
           <div className="text-2xl font-[250]">
             <ul>
               <li className=" font-bold cursor-pointer">Website</li>
