@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import CoursesPage from "./pages/Courses";
+import About from "./pages/About/About";
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/service" element={<Services />} />
             <Route path="/courses" element={<CoursesPage/>} />
-            <Route path="/about-us" element={<Home />} />
+            <Route path="/about-us" element={<About />} />
             <Route path="/contact-us" element={<Home />} />
           </Routes>
         </main>

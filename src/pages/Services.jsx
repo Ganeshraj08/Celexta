@@ -54,6 +54,18 @@ const services = [
       "Our team designs labels and stickers that are both functional and visually appealing. We'll work with you to create designs that reflect your brand's personality and messaging, while also considering the technical requirements of the label or sticker.",
     icon: icon7,
   },
+  {
+    title: "Packaging Design",
+    description:
+      "We design eye-catching packaging solutions that stand out on shelves, convey your brand's personality, and protect your products. Our team considers functionality, strategy, and aesthetics to create packaging that resonates with your target audience.",
+    icon: icon1,
+  },
+  {
+    title: "Motion Graphics",
+    description:
+      "Our motion graphics services include animated logos, explainer videos, and social media clips that bring your brand to life. We use motion to capture attention, convey complex information, and create an emotional connection with your audience.",
+    icon: icon2,
+  },
 ];
 
 const pricing = [
@@ -83,9 +95,9 @@ const Services = () => {
   return (
     <div className="bg-background text-text p-8 font-poppins">
       <section className="text-center mb-16">
-        <div className="flex justify-center items-end gap-1">
-          <img src={img1} alt="icon" />
-          <h1 className="filter-shadow text-[86.75px] leading-[130.13px]  mb-4 text-primary font-[500] font">
+        <div className="flex justify-center items-center gap-1">
+          <img src={img1} alt="icon" className="max-md:w-20" />
+          <h1 className="filter-shadow md:text-[86.75px] text-4xl leading-[130.13px]  text-primary font-[500] font">
             Services
           </h1>
         </div>
@@ -102,11 +114,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`max-w-[362px] py-9 px-6  gap-4 md:gap-9 bg-gradient-to-b from-white/25 to-gray-900/25 border-[0.42px] flex justify-center items-center flex-col card-shadow rounded-lg shadow-lg ${
-              index === services.length - 1
-                ? "lg:col-span-3 lg:justify-self-center"
-                : ""
-            }`}
+            className={`max-w-[362px] py-9 px-6  gap-4 md:gap-9 bg-gradient-to-b from-white/25 to-gray-900/25 border-[0.42px] flex justify-center items-center flex-col card-shadow rounded-lg shadow-lg`}
           >
             <img src={service.icon} alt={`${service.title}-icon`} />
             <h2 className="text-[23.17px] font-[700] mb-2 text-center">
@@ -120,7 +128,7 @@ const Services = () => {
       <section className="text-center mb-8">
         <div className="flex justify-center items-center filter-shadow gap-4">
           <img src={img2} alt="icon" />
-          <h1 className="text-[86.75px] leading-[130.13px]  mb-4 text-primary font-[500] font">
+          <h1 className="leading-[130.13px] md:text-[86.75px] text-4xl   text-primary font-[500] font">
             Pricing
           </h1>
         </div>

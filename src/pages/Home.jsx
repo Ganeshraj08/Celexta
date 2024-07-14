@@ -10,7 +10,7 @@ import Course from "../components/Course";
 
 const Home = () => (
   <section className="w-full fade-in bg-background">
-    <div className=" bg-hero  cover max-w-full h-[100vh] flex  items-center justify-between lg:p-16 max-sm:flex-col max-sm:p-10 ">
+    <div className=" bg-hero cover max-w-full  flex  items-center justify-between lg:p-16 max-sm:flex-col max-sm:p-10 ">
       <div className="text-white  flex flex-col justify-between items-center gap-20 max-sm:gap-9">
         <div className="font-prompt">
           <h1 className="text-[9.375rem] text-outline font-normal max-sm:text-[4rem]">

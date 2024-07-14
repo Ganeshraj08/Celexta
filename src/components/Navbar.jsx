@@ -1,12 +1,14 @@
 // src/components/Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "/src/assets/icons/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-blackColor max-md:flex-col text-text p-4 flex justify-between items-center font-poppins">
-      <div className="text-2xl font-bold">CELEXTA</div>
-      <div className="space-x-4 ">
+    <nav className="bg-blackColor max-md:flex-col max-md:items-start text-text p-4 flex gap-10 items-center font-poppins">
+      <img src={logo} alt="Celexta" width={100} />
+      
+      <div className="space-x-10 max-md:space-x-0 max-md:ml-2 max-md:flex max-md:flex-col  text-xl ">
         <Link to="/" className="hover:text-primary">
           Home
         </Link>

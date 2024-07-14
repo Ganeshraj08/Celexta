@@ -7,9 +7,13 @@ const CoursesPage = () => {
   return (
     <section className="w-full bg-background">
       <div className="container pb-10">
-        <div className="flex justify-center items-end gap-1">
-          <img src="/src/assets/icons/Group 7.png" alt="icon" />
-          <h1 className="filter-shadow text-[69px] leading-[130.13px]  mb-4 text-primary font-[500] font">
+        <div className="flex justify-center items-center gap-1">
+          <img
+            src="/src/assets/icons/Group 7.png"
+            alt="icon"
+            className="max-md:w-20"
+          />
+          <h1 className="filter-shadow  leading-[130.13px] md:text-[69px] text-4xl  text-primary font-[500] font">
             Courses
           </h1>
         </div>
@@ -20,7 +24,7 @@ const CoursesPage = () => {
           core services or products]. Our dedication to [core value or unique
           selling proposition] sets us apart in [your industry or market].
         </p>
-        <h2 className="text-center filter-shadow   text-dark font-poppins font-[500] text-5xl my-6 tracking-wide">
+        <h2 className="text-center filter-shadow   text-dark font-poppins font-[500] md:text-[69px] text-4xl my-6 tracking-wide">
           List of Courses
         </h2>
 
@@ -31,13 +35,15 @@ const CoursesPage = () => {
                 <img src={dot} alt="icon" />
               </div>
               <div>
-                <h3 className="text-xl font-semiblod leading-10">{list.label}</h3>
+                <h3 className="text-xl font-semiblod leading-10">
+                  {list.label}
+                </h3>
                 <p className="italic">{list.description}</p>
               </div>
             </li>
           ))}
         </ul>
-        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] text-5xl my-10 tracking-wide">
+        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-[69px] text-4xl my-10 tracking-wide">
           Overview
         </h2>
         <div>
