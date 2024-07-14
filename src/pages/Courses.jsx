@@ -2,6 +2,7 @@ import React from "react";
 import { dot, icon } from "../assets";
 import { accordion, coursesList } from "../constants";
 import Accordion from "../components/Accordion";
+import img1 from "/src/assets/icons/Group 7.png"
 
 const CoursesPage = () => {
   return (
@@ -9,7 +10,7 @@ const CoursesPage = () => {
       <div className="container pb-10">
         <div className="flex justify-center items-center gap-1">
           <img
-            src="/src/assets/icons/Group 7.png"
+            src={img1}
             alt="icon"
             className="max-md:w-20"
           />
