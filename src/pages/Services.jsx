@@ -1,51 +1,58 @@
 // src/pages/Services.jsx
 import React from "react";
-import img1 from "/src/assets/icons/Group 7.png"
-import img2 from "/src/assets/icons/Group 8.png"
-
+import img1 from "/src/assets/icons/Group 7.png";
+import img2 from "/src/assets/icons/Group 8.png";
+import hand from "/src/assets/icons/Hand Right.png";
+import icon1 from "/src/assets/icons/Packing.png";
+import icon2 from "/src/assets/icons/Hexagonal Pattern.png";
+import icon3 from "/src/assets/icons/Hashtag Large.png";
+import icon4 from "/src/assets/icons/Holding Box.png";
+import icon5 from "/src/assets/icons/Branding.png";
+import icon6 from "/src/assets/icons/Sticker.png";
+import icon7 from "/src/assets/icons/Website.png";
 
 const services = [
   {
     title: "Packaging Design",
     description:
       "We design eye-catching packaging solutions that stand out on shelves, convey your brand's personality, and protect your products. Our team considers functionality, strategy, and aesthetics to create packaging that resonates with your target audience.",
-    icon: "/src/assets/icons/Packing.png",
+    icon: icon1,
   },
   {
     title: "Motion Graphics",
     description:
       "Our motion graphics services include animated logos, explainer videos, and social media clips that bring your brand to life. We use motion to capture attention, convey complex information, and create an emotional connection with your audience.",
-    icon: "/src/assets/icons/Hexagonal Pattern.png",
+    icon: icon2,
   },
   {
     title: "Social Media Marketing and Management",
     description:
       "Our team helps you build a strong online presence, grow your audience, and drive engagement across social media platforms. We help you increase brand awareness, enhance your efforts, generate leads, and boost sales through effective social media marketing and management.",
-    icon: "/src/assets/icons/Hashtag Large.png",
+    icon: icon3,
   },
   {
     title: "Branding",
     description:
       "Our branding services include developing your brand strategy, voice, and visual identity. We work closely with you to create a consistent brand experience across all touchpoints, from your website to social media and marketing materials.",
-    icon: "/src/assets/icons/Branding.png",
+    icon: icon4,
   },
   {
     title: "Poster Design",
     description:
       "We design posters that grab attention, communicate your message, and leave a lasting impression. Whether you need a poster for an event, promotion, or brand awareness, our team will create a visually stunning design that resonates with your audience.",
-    icon: "/src/assets/icons/Holding Box.png",
+    icon: icon5,
   },
   {
     title: "Label and Sticker Design",
     description:
       "Our team designs labels and stickers that are both functional and visually appealing. We work with you to create designs that reflect your brand's personality and messaging, while also considering the technical requirements of the label or sticker.",
-    icon: "/src/assets/icons/Sticker.png",
+    icon: icon6,
   },
   {
     title: "Website Design",
     description:
       "Our team designs labels and stickers that are both functional and visually appealing. We'll work with you to create designs that reflect your brand's personality and messaging, while also considering the technical requirements of the label or sticker.",
-    icon: "/src/assets/icons/Website.png",
+    icon: icon7,
   },
 ];
 
@@ -135,7 +142,7 @@ const Services = () => {
                   key={i}
                   className="flex gap-2 items-center font-[250] text-[20px] leading-[30px]"
                 >
-                  <img src="/src/assets/icons/Hand Right.png" />
+                  <img src={hand} />
                   {feature}
                 </li>
               ))}
