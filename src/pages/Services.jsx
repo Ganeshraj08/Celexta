@@ -1,5 +1,8 @@
 // src/pages/Services.jsx
 import React from "react";
+import img1 from "/src/assets/icons/Group 7.png"
+import img2 from "/src/assets/icons/Group 8.png"
+
 
 const services = [
   {
@@ -74,7 +77,7 @@ const Services = () => {
     <div className="bg-background text-text p-8 font-poppins">
       <section className="text-center mb-16">
         <div className="flex justify-center items-end gap-1">
-          <img src="/src/assets/icons/Group 7.png" alt="icon" />
+          <img src={img1} alt="icon" />
           <h1 className="filter-shadow text-[86.75px] leading-[130.13px]  mb-4 text-primary font-[500] font">
             Services
           </h1>
@@ -109,7 +112,7 @@ const Services = () => {
 
       <section className="text-center mb-8">
         <div className="flex justify-center items-center filter-shadow gap-4">
-          <img src="/src/assets/icons/Group 8.png" alt="icon" />
+          <img src={img2} alt="icon" />
           <h1 className="text-[86.75px] leading-[130.13px]  mb-4 text-primary font-[500] font">
             Pricing
           </h1>
