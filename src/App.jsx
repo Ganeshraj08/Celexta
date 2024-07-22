@@ -6,9 +6,11 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import CoursesPage from "./pages/Courses";
-import About from "./pages/About/About";
 
-
+import About from "./pages/About";
+import Lecture from "./pages/Lecture";
+import Congrats from "./pages/Congrats";
+import Certificate from "./pages/Certificate";
 
 const App = () => {
   return (
@@ -22,6 +24,9 @@ const App = () => {
             <Route path="/courses" element={<CoursesPage/>} />
             <Route path="/about-us" element={<About />} />
             <Route path="/contact-us" element={<Home />} />
+            <Route path="/lecture" element={<Lecture />} />
+            <Route path="/congrats" element={<Congrats />} />
+            <Route path="/certificate" element={<Certificate />} />
           </Routes>
         </main>
         <Footer />
