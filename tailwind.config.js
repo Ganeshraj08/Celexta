@@ -31,7 +31,7 @@ export default {
       backgroundImage: {
         hero: "url('assets/images/background.jfif')",
         customgradient: 'linear-gradient(180deg, rgba(234, 103, 255, 0.48) 0%, rgba(181, 72, 219, 0.6) 28.5%, rgba(139, 56, 205, 0.6) 63%, rgba(94, 11, 159, 0.6) 100%)',
-
+        doublegradient:"linear-gradient(180deg, rgba(192, 23, 196, 0.3) 0%, rgba(139, 56, 205, 0.3) 100%)"
       },
     },
   },

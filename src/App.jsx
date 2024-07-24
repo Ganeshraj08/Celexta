@@ -12,6 +12,8 @@ import Lecture from "./pages/Lecture";
 import Congrats from "./pages/Congrats";
 import Certificate from "./pages/Certificate";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -27,7 +29,8 @@ const App = () => {
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/lecture" element={<Lecture />} />
             <Route path="/congrats" element={<Congrats />} />
-          
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/certificate" element={<Certificate />} />
           </Routes>
         </main>
