@@ -30,6 +30,8 @@ const Register = () => {
      style={{
       borderTopLeftRadius:"50px",
       borderBottomRightRadius:"50px",
+      padding:"50px",
+
      }}
      
      className='bg-doublegradient py-9 px-14'>
@@ -41,7 +43,7 @@ const Register = () => {
                   Enter Name
               </label>
               <input 
-              className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+              className="block w-full mb-2 py-0.5 px-5 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
               type='text'
               name='UserName'
               value={data.UserName}
@@ -54,7 +56,7 @@ const Register = () => {
                   Enter Email
               </label>
               <input 
-              className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+              className="block w-full mb-2 py-0.5 px-5 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
               type='email'
               name='Email'
               value={data.Email}
@@ -67,7 +69,7 @@ const Register = () => {
                   Create Password
               </label>
               <input 
-              className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+              className="block w-full mb-2 py-0.5 px-5 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
               type='password'
              
               name='Password'
@@ -81,7 +83,7 @@ const Register = () => {
                   Confirm Password
               </label>
               <input 
-              className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+              className="block w-full mb-2 py-0.5 px-5 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
               type='password'
              
               name='ConfirmPassword'

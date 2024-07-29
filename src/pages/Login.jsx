@@ -27,7 +27,10 @@ const Login = () => {
        style={{
         borderTopLeftRadius:"50px",
         borderBottomRightRadius:"50px",
+        padding:"50px",
+       
        }}
+       
        
        className='bg-doublegradient py-9 px-14'>
             <form>
@@ -39,7 +42,7 @@ const Login = () => {
                     Enter Email
                 </label>
                 <input 
-                className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+                className="block w-full mb-2 py-0.5 px-5 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
                 type='email'
                 name='Email'
                 value={data.Email}
@@ -52,7 +55,7 @@ const Login = () => {
                     Enter Password
                 </label>
                 <input 
-                className="block w-full py-2.3 px-0 text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
+                className="block w-full py-0.5  px-5  text-lg text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:focus:border-background focus:outline-none focus:ring-0 focus:text-white focus:border-background peer"
                 type='password'
                 name='Password'
                 value={data.Password}
