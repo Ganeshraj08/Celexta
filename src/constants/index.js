@@ -1,9 +1,10 @@
-import { design_1 } from "../assets";
+import { design_1,design_2,design_3,design_4 } from "../assets";
 
 export const design = [
   { Image: design_1, label: "Graphic Design" },
-  { Image: design_1, label: "Web Development" },
-  { Image: design_1, label: "Digital Marketing" },
+  { Image: design_2, label: "Web Development" },
+  { Image: design_3, label: "Digital Marketing" },
+  { Image: design_4, label: "Digital Marketing" },
 ];
 export const service = [
   { label: "Logo Design" },
