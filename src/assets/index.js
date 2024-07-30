@@ -7,6 +7,9 @@ import rectangle from "./icons/Rectangle 4.png";
 import design_2 from "./images/2.png";
 import design_3 from "./images/3.png";
 import design_4 from "./images/4.png";
+import logo from "./icons/logo.png";
+import menu from "./icons/menu.svg";
+import close from "./icons/close.svg";
 
 export {
   hero_img,
@@ -18,4 +21,7 @@ export {
   icon,
   arrow,
   rectangle,
+  logo,
+  menu,
+  close,
 };

@@ -1,4 +1,12 @@
-import { design_1,design_2,design_3,design_4 } from "../assets";
+import { design_1, design_2, design_3, design_4 } from "../assets";
+
+export const Nav = [
+  { label: "Home", id: "/" },
+  { label: "Services", id: "/service" },
+  { label: "Cources", id: "/courses" },
+  { label: "About us", id: "/about-us" },
+  { label: "Contact us", id: "/contact-us" },
+];
 
 export const design = [
   { Image: design_1, label: "Graphic Design" },
