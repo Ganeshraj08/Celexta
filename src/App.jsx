@@ -14,6 +14,7 @@ import Certificate from "./pages/Certificate";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserProfile from "./pages/UserProfile";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/congrats" element={<Congrats />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/userProfile" element={<UserProfile />} />
             <Route path="/certificate" element={<Certificate />} />
           </Routes>
         </main>

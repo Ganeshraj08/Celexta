@@ -20,7 +20,10 @@ export default {
         darkgradient:"#3A373766",
         whitebg:'rgba(255, 255, 255, 0.15)',
         pink:'rgba(192, 23, 195, 1)',
-        purpletransparent: 'rgba(139, 56, 205, 0.30)'
+        purpletransparent: 'rgba(139, 56, 205, 0.30)',
+        purpleStart:"#C017C4",
+        purpleEnd:"#8B38CD",
+        blur:"#00000066"
       },
       
       boxShadow: {
