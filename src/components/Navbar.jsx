@@ -46,6 +46,12 @@ const Navbar = ({ isLoggedIn }) => {
             >
               Login
             </Link>
+            <Link
+              to="/register"
+              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
+            >
+              Register
+            </Link>
 
         </div>
 
@@ -83,7 +89,7 @@ const Navbar = ({ isLoggedIn }) => {
                   </Link>
                 </li>
               ))}
-              <div className="my-6">
+              <div className="my-6 space-x-4">
                  
                   <Link
                     to="/login"
@@ -91,6 +97,13 @@ const Navbar = ({ isLoggedIn }) => {
                   >
                     Login
                   </Link>
+                  <Link
+                    to="/register"
+                    className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-15"
+                  >
+                   Register
+                  </Link>
+                  
                 
               </div>
             </ul>

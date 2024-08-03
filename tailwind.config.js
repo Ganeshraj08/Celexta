@@ -16,6 +16,7 @@ export default {
         dark: "#8B38CD",
         light: "#FFFFFF0D",
         card:"#C017C31A",
+        cardBold:"#C017C3",
         hard: "#130022",
         darkgradient:"#3A373766",
         whitebg:'rgba(255, 255, 255, 0.15)',
@@ -40,7 +41,40 @@ export default {
         lineargradient:"linear-gradient(98.23deg, #8B38CD -2.8%, #C017C4 97.1%)",
 
       },
+      borderColor:{
+        'gradientborder':'linear-gradient(90deg, #C017C4 0%, #8B38CD 100%)'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.scrollbar-hide': {
+          'scrollbar-width': 'none',
+          '-ms-overflow-style': 'none', 
+          '&::-webkit-scrollbar': {
+            display: 'none', 
+          },
+        },
+        '.scrollbar-custom': {
+          '&::-webkit-scrollbar': {
+            width: '3px',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: '#ffffff',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: '#8B38CD',
+            borderRadius: '5px',
+            border: '1px solid #8B38CD',
+          },
+          '&::-webkit-scrollbar-thumb:hover': {
+            background: '#8B38CD',
+          },
+        },
+      }
+
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 };
