@@ -29,7 +29,7 @@ const Login = () => {
       <div className="h-[75vh] flex flex-col  items-center justify-center">
         <div
           
-          className="bg-doublegradient w-[40%] max-sm:w-[95%] max-sm:p-9 rounded-tl-[50px] rounded-br-[50px] py-9 px-14"
+          className="bg-doublegradient w-[40%] max-sm:w-[95%] max-sm:p-9` rounded-tl-[50px] rounded-br-[50px] py-9 px-14"
         >
           <form>
             <label

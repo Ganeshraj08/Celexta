@@ -102,7 +102,7 @@ const Services = () => {
           </h1>
         </div>
 
-        <p className="para w-2/3 mx-auto my-7">
+        <p className="para w-full mx-auto my-7">
           At CELEXTA, we offer professional graphic design services to enhance
           your brand's visual identity. Our expert team delivers customized
           solutions that meet your unique needs and elevate your projects to the
@@ -140,21 +140,24 @@ const Services = () => {
             <h3 className="font-[250] text-[20px] leading-[30px] mb-1 ">
               {plan.type}
             </h3>
-            <p className=" text-primary font-[500] font-poppins text-[48px]  mb-1">
+            <p className="  font-[500] font-poppins text-[48px]  mb-1">
               {plan.price}
             </p>
-            <hr className="border-[1px] rounded-s my-1" />
-            <ul className="space-y-2 my-5">
-              {plan.features.map((feature, i) => (
-                <li
-                  key={i}
-                  className="flex gap-2 items-center font-[250] text-[20px] leading-[30px]"
-                >
-                  <img src={hand} />
-                  {feature}
-                </li>
-              ))}
-            </ul>
+            <hr className="border-[1px] rounded-s mb-4 " />
+            <div className="bg-background p-2 rounded-lg">
+              <ul className="space-y-2 my-5 overflow-y-auto">
+                {plan.features.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="flex gap-2 items-center font-[250] text-[15px] leading-[30px]"
+                  >
+                    <img src={hand} />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <button className="mt-4 bg-primary text-white w-2/3 block mx-auto p-2 rounded-lg">
               Visit
             </button>
