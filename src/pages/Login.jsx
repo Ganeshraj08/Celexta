@@ -19,17 +19,21 @@ const Login = () => {
   }
   return (
     <div className="bg-background">
-      <div className="flex   max-sm:flex-col items-center p-3 gap-2 justify-center  ">
-        <h6 className="text-pink text-xl font-bold mt-3 ">log in</h6>
-        <h6 className="text-white text-xl font-bold mt-3 text-center">
+      <div className="flex  gap-2 justify-center  ">
+        <h6 className="text-pink text-xl font-bold mt-9">log in</h6>
+        <h6 className="text-white text-xl font-bold mt-9">
           {" "}
           to start your learning journey with us!
         </h6>
       </div>
       <div className="h-[75vh] flex flex-col  items-center justify-center">
         <div
-          
-          className="bg-doublegradient w-[40%] max-sm:w-[95%] max-sm:p-9` rounded-tl-[50px] rounded-br-[50px] py-9 px-14"
+          style={{
+            borderTopLeftRadius: "50px",
+            borderBottomRightRadius: "50px",
+            padding: "50px",
+          }}
+          className="bg-doublegradient py-9 px-14"
         >
           <form>
             <label

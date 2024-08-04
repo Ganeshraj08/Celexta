@@ -15,8 +15,25 @@ const Lecture = () => {
         </div>
         <div className="mx-20">
           <h2 className="text-[#8C52FF] font-bold text-2xl mb-5">Module n &gt; Topic &gt;</h2>
-          <h5 className="font-medium text-xl bg-[rgba(217,217,217,0.1)] px-6 py-2.5 h-[250px]">Video Description</h5>
-          <button className="cursor-pointer bg-[rgba(139,56,205,1)] px-4 py-2 border border-transparent rounded-xl text-[20px] mt-12">Take Test</button>
+          <div className="font-medium text-xl bg-[rgba(217,217,217,0.1)] px-6 py-2.5">
+          <h5 className="text-base  px-6 py-2.5 sm:text-lg mb-2">&lt;Video Description&gt;</h5>
+          <p className="px-6 py-2.5 text-base sm:text-lg sm:font-semibold">
+          We specialize in [briefly describe your core services or products]. Our team of [number of employees or experts] brings together expertise in [mention specific skills or specialties]. Whether you’re looking to [describe key service benefits or outcomes], we tailor solutions that meet your unique needs.
+
+          </p>
+          </div>
+        
+          <div className="text-center">
+          <button 
+          style={{
+            borderTopLeftRadius:"10px",
+            borderBottomRightRadius:"10px",
+          }}
+          className="cursor-pointer bg-[rgba(217,217,217,0.1)] px-5 py-3 border border-transparent  text-[20px] mt-12">Assesment 1</button>
+          <h5 className="text-[#A947F6] mt-8">
+          Here, The Assessment is based on all the topics you have completed in this Module.
+          </h5>
+          </div>
         </div>
         <div className="mt-12 mx-20 w-[90]">
           <h2 className="text-[#8C52FF] font-bold text-2xl mb-5">Assignment - Module n</h2>
@@ -26,11 +43,30 @@ const Lecture = () => {
             design, including layout, typography, color theory, and composition.
             These principles form the basis of effective visual communication.
           </h5>
-          <p className="font-normal text-[22px]  px-[30px] py-[10px] mt-7 bg-[rgb(217,217,217)]/10">
-            Paste the link of the assignment here
-          </p>
+          
         </div>
-        <button className="ml-20 mt-7 bg-[rgba(139,56,205,1)] px-4 py-2 border border-transparent rounded-md text-[20px] cursor-pointer">Mark Complete</button>
+        <div className="mx-20 mt-6 flex items-center ">
+      <h6 className="text-white font-weight-500 text-sm  w-2/3 px-4 py-4 mb-5 bg-[rgb(217,217,217)]/10 rounded-md md:text-xl">
+          Paste the link of the assignment here
+        </h6>
+        <button
+        className="rounded-md bg-purple ml-12 mr-10 px-3 py-3  text-white text-base font-weight-400 cursor-pointer"
+        >
+         Submit
+          </button>
+      </div>
+      <div className="mt-5 flex justify-between">
+      <button
+        className="rounded-full bg-white ml-12 mr-10 p-3  text-pink text-sm font-semibold cursor-pointer md:text-base md:p-2"
+        >
+          &lt;&lt; Previous
+          </button>
+          <button
+        className="rounded-full bg-white ml-12 mr-10 p-3  text-pink text-sm font-semibold cursor-pointer md:text-base md:p-2"
+        >
+           Next &gt;&gt;
+          </button>
+      </div>
       </div>
     </div>
   );

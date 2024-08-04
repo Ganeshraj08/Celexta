@@ -10,7 +10,7 @@ const Navbar = ({ isLoggedIn }) => {
   const [stickyBar, setStickyBar] = useState(false);
 
   return (
-    <nav className="w-full bg-black">
+    <nav className="w-full bg-black overflow-hidden">
       <div
         className="mx-auto flex px-2  justify-between  custom-margin  z-10
      items-center "
@@ -39,16 +39,17 @@ const Navbar = ({ isLoggedIn }) => {
           ))}
         </ul>
         <div className="max-sm:hidden">
+        
           
             <Link
               to="/login"
-              className="bg-pink/95 cursor-pointer px-2 py-2 rounded-md text-white mr-2"
+              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
             >
               Login
             </Link>
             <Link
               to="/register"
-              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-2"
+              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
             >
               Register
             </Link>
@@ -90,6 +91,7 @@ const Navbar = ({ isLoggedIn }) => {
                 </li>
               ))}
               <div className="my-6 space-x-4">
+              
                  
                   <Link
                     to="/login"
@@ -97,12 +99,7 @@ const Navbar = ({ isLoggedIn }) => {
                   >
                     Login
                   </Link>
-                  <Link
-                    to="/register"
-                    className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-15"
-                  >
-                   Register
-                  </Link>
+                 
                   
                 
               </div>
