@@ -21,8 +21,8 @@ const Register = () => {
   return (
     <div className="bg-background">
       <div className="flex gap-2 justify-center  ">
-        <h6 className="text-pink text-xl font-bold mt-9">Sign up</h6>
-        <h6 className="text-white text-xl font-bold mt-9">
+        <h6 className="text-pink text-base font-bold mt-9 md:text-xl">Sign up</h6>
+        <h6 className="text-white text-base font-bold mt-9 md:text-xl">
           {" "}
           to start your learning journey with us!
         </h6>
@@ -34,7 +34,7 @@ const Register = () => {
             borderBottomRightRadius: "50px",
             padding: "50px",
           }}
-          className="bg-doublegradient py-9 px-14"
+          className="bg-doublegradient py-9 px-14 md:w-1/4"
         >
           <form>
             <label

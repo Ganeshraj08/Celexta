@@ -93,7 +93,7 @@ const AboutUs = () => {
     </div>
     <div id="controls-carousel" className="relative w-full" data-carousel="static">
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96 flex flex-col justify-center items-center ">
+      <div className="relative h-56 overflow-hidden text-sm rounded-lg sm:h-56 md:h-80 flex flex-col justify-center items-center ">
         {items.map((item, index) => (
           <div
             key={index}
@@ -127,7 +127,7 @@ const AboutUs = () => {
       </button>
       <button
         type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="absolute  top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={handleNext}
         aria-label="Next"
       >

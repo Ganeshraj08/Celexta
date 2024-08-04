@@ -39,19 +39,20 @@ const Navbar = ({ isLoggedIn }) => {
           ))}
         </ul>
         <div className="max-sm:hidden">
+        <Link
+              to="/register"
+              className="bg-white cursor-pointer px-4 py-2 rounded-md text-purple mr-10"
+            >
+              Sign up
+            </Link>
           
             <Link
               to="/login"
-              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
+              className="bg-purple cursor-pointer px-4 py-2 rounded-md text-white mr-10"
             >
               Login
             </Link>
-            <Link
-              to="/register"
-              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
-            >
-              Register
-            </Link>
+            
 
         </div>
 
@@ -90,6 +91,12 @@ const Navbar = ({ isLoggedIn }) => {
                 </li>
               ))}
               <div className="my-6 space-x-4">
+              <Link
+                    to="/register"
+                    className="bg-white cursor-pointer px-4 py-2 rounded-md text-primary mr-15"
+                  >
+                   Sign up
+                  </Link>
                  
                   <Link
                     to="/login"
@@ -97,12 +104,7 @@ const Navbar = ({ isLoggedIn }) => {
                   >
                     Login
                   </Link>
-                  <Link
-                    to="/register"
-                    className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-15"
-                  >
-                   Register
-                  </Link>
+                 
                   
                 
               </div>
