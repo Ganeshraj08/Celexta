@@ -17,6 +17,8 @@ import UserProfile from "./pages/UserProfile";
 import AdminPanel from "./pages/AdminPanel";
 import Syllabus2 from "./pages/Syllabus2";
 import Syllabus3 from "./pages/Syllabus3";
+import CurrentCourse from "./pages/CurrentCourse";
+import CourseCom from "./pages/CourseCompleted";
 
 const App = () => {
   const location = useLocation();
@@ -41,6 +43,8 @@ const App = () => {
           <Route path="/syllabus" element={<Syllabus3 />} />
           <Route path="/certificate" element={<Certificate />} />
           <Route path="/adminWelcome" element={<AdminPanel />} />
+          <Route path="/currentCourse" element={<CurrentCourse/>} />
+          <Route path="/courseCompleted" element={<CourseCom />} />
         </Routes>
       </main>
       {!adminRoutes.includes(location.pathname) && <Footer />}

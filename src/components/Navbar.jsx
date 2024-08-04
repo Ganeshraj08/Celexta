@@ -12,7 +12,7 @@ const Navbar = ({ isLoggedIn }) => {
   return (
     <nav className="w-full bg-black">
       <div
-        className="mx-auto flex px-8 justify-between  custom-margin  z-10
+        className="mx-auto flex px-2  justify-between  custom-margin  z-10
      items-center "
       >
         <img src={logo} alt="logo" className="w-[90px] max-md:w-[70px] " />
@@ -48,11 +48,16 @@ const Navbar = ({ isLoggedIn }) => {
           
             <Link
               to="/login"
-              className="bg-purple cursor-pointer px-4 py-2 rounded-md text-white mr-10"
+              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
             >
               Login
             </Link>
-            
+            <Link
+              to="/register"
+              className="bg-pink/95 cursor-pointer px-4 py-2 rounded-md text-white mr-10"
+            >
+              Register
+            </Link>
 
         </div>
 
