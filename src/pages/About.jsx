@@ -44,7 +44,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-purpletransparent p-4 rounded-lg ">
             <h2 className="text-2xl font-semibold mb-4 text-center">What do we do?</h2>
-            <p className='p-3 text-center text-xl'>
+            <p className='p-3 text-base md:text-xl '>
               We specialize in [briefly describe your core services or products]. Our team of [number of employees or experts] brings together expertise in [mention specific skills or specialties]. Whether you’re looking to [describe key service benefits or outcomes], we tailor solutions that meet your unique needs.
             </p>
           </div>
@@ -52,24 +52,24 @@ const AboutUs = () => {
           <div className="bg-purpletransparent px-4 py-6 rounded-lg row-span-4">
             <h2 className="text-2xl font-semibold mb-4 text-center ">Why do you choose US?</h2>
             <ul className="list-disc list-inside  flex flex-col items-center justify-center gap-4">
-            <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-xl">Customer Centric</li>
-            <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-xl">Quality</li>
-              <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-xl ">Expertise</li>
-              <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-xl">Creativity</li>
+            <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-base md:text-xl">Customer Centric</li>
+            <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-base md:text-xl">Quality</li>
+              <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-base md:text-xl ">Expertise</li>
+              <li className="w-2/3 p-2 bg-[rgba(139,56,205,0.25)] text-base md:text-xl">Creativity</li>
              
             </ul>
           </div>
 
           <div className="bg-purpletransparent p-6 rounded-lg row-span-4">
             <h2 className="text-2xl font-semibold mb-4 text-center ">Our Team</h2>
-            <p className='text-center font-normal text-xl'>
+            <p className=' font-normal text-base md:text-xl'>
               Meet the driving force behind [Your Company Name]. Our diverse team of professionals is dedicated to [mention key team values or goals]. Together, we strive to [describe the impact your team aims to make in your industry or community].
             </p>
           </div>
 
           <div className="bg-purpletransparent p-4 rounded-lg">
             <h2 className="text-2xl font-semibold mb-4 text-center">Our Mission</h2>
-            <p className='text-center font-normal text-xl'>
+            <p className='font-normal text-base md:text-xl'>
               At [Your Company Name], our mission is to [state your company’s mission in relation to solving customer problems or achieving goals].
             </p>
           </div>

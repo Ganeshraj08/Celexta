@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -72,6 +73,7 @@ export default {
             background: '#8B38CD',
           },
         },
+       
       }
 
       addUtilities(newUtilities, ['responsive', 'hover'])

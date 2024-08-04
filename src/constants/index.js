@@ -1,5 +1,10 @@
 import { design_1, design_2, design_3, design_4 } from "../assets";
-
+import course1 from "../assets/images/course1.jpeg"
+import course2 from "../assets/images/course2.jpeg"
+import course3 from "../assets/images/course3.jpeg"
+import course4 from "../assets/images/course4.jpeg"
+import course5 from "../assets/images/course5.jpeg"
+import course6 from "../assets/images/course6.jpeg"
 export const Nav = [
   { label: "Home", id: "/" },
   { label: "Services", id: "/service" },
@@ -14,6 +19,33 @@ export const design = [
   { Image: design_3, label: "Digital Marketing" },
   { Image: design_4, label: "Digital Marketing" },
 ];
+export const courseDesign = [
+  {
+    title:"Hands on project focus",
+    image:course1
+  },
+  {
+    title:"Industry relevent skills",
+    image:course2
+  },
+  {
+    title:"Personalized Feedback and Mentorship",
+    image:course3
+  }
+  ,{
+    title:"Focus on Branding and Strategy",
+    image:course4
+  },
+  {
+    title:"Career Support and Portfolio Building",
+    image:course5
+  },
+  {
+    title:"Flexibility and Accessibility",
+    image:course6
+  }
+]
+
 export const service = [
   { label: "Logo Design" },
   { label: "Motion Graphics" },
@@ -64,12 +96,37 @@ export const courses = [
   { label: "Course 3" },
 ];
 export const coursesList = [
-  { label: "Course 1", description: "Course 1 Description" },
-  { label: "Course 1", description: "Course 1 Description" },
-  { label: "Course 1", description: "Course 1 Description" },
-  { label: "Course 1", description: "Course 1 Description" },
-  { label: "Course 1", description: "Course 1 Description" },
-  { label: "Course 1", description: "Course 1 Description" },
+ {
+  title:"Graphic Design",
+  courses:[
+    { label: "Course 1", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]. " },
+    { label: "Course 2", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 3", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 4", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+
+  ]
+ },
+ {
+  title:"UI/UX Design",
+  courses:[
+    { label: "Course 1", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]. " },
+    { label: "Course 2", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 3", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 4", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+
+  ]
+ }
+ ,{
+  title:"Digital Marketing",
+  courses:[
+    { label: "Course 1", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]. " },
+    { label: "Course 2", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 3", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+    { label: "Course 4", description: " we [briefly describe your company’s core services or products]. Our dedication to [core value or unique selling proposition] sets us apart in [your industry or market]." },
+
+  ]
+ }
+ 
 ];
 export const accordion = [
   { title: "1.Course Election and Enrollment", content: "" },
