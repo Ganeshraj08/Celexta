@@ -17,7 +17,7 @@ const CoursesPage = () => {
             alt="icon"
             className="max-md:w-20"
           />
-          <h1 className="filter-shadow  leading-[130.13px] md:text-[69px] text-4xl  text-primary font-[500] font">
+          <h1 className="filter-shadow  leading-[130.13px] md:text-[69px] text-3xl  text-primary font-[500] font">
             Courses
           </h1>
         </div>
@@ -59,7 +59,7 @@ const CoursesPage = () => {
   }
          </div>
          
-        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-4xl my-10 tracking-wide">
+        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-base my-10 tracking-wide">
           What will you learn from this courses
         </h2>
         <div className="container pb-10">
@@ -73,7 +73,7 @@ const CoursesPage = () => {
 
           </div>
         </div>
-        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-4xl my-10 tracking-wide">
+        <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-base my-10 tracking-wide">
         How our courses are different from other courses?
                 </h2>
                 <div className="container pb-10 ">
