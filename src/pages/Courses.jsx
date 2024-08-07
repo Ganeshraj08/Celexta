@@ -112,6 +112,7 @@ const CoursesPage = () => {
             </div>
           </div>
         ))}
+
       </div>
 
       <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-base my-10 tracking-wide">
