@@ -91,62 +91,64 @@ const AboutUs = () => {
     <div  className='text-center my-14'>
     <h2 className='text-3xl font-bold mb-4 text-[#8b38cd]'>Have look into Our WorkShops</h2>
     </div>
-    <div id="controls-carousel" className="relative w-full" data-carousel="static">
-      {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden text-sm rounded-lg sm:h-56 md:h-80 flex flex-col justify-center items-center ">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className={`absolute  w-full sm:w-3/4 sm:h-2/3 flex items-center justify-center bg-lineargradient text-white font-bold text-sm transition-transform duration-700 ease-in-out ${index === currentIndex ? 'block' : 'hidden'}`}
-           
-            data-carousel-item={index === currentIndex ? 'active' : ''}
-          >
-            <div className="p-3 overflow-y-auto text-xs md:text-xl max-h-[80vh] max-w-full">{item.content}</div>
-          </div>
-        ))}
-      </div>
-      {/* Slider controls */}
-      <button
-        type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        onClick={handlePrev}
-        aria-label="Previous"
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
-          </svg>
-          <span className="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        className="absolute  top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        onClick={handleNext}
-        aria-label="Next"
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
     </div>
+  <div id="controls-carousel" className=" relative w-full " data-carousel="static">
+  {/* Carousel wrapper */}
+  <div className='w-2/3 mx-auto md:w-11/12 '>
+  <div className="relative h-56 overflow-hidden text-sm rounded-lg sm:h-56 md:h-80 flex flex-col justify-center items-center">
+    {items.map((item, index) => (
+      <div
+        key={index}
+        className={`absolute w-full sm:w-3/4 sm:h-2/3 flex items-center justify-center bg-lineargradient text-white font-bold text-sm transition-transform duration-700 ease-in-out ${index === currentIndex ? 'block' : 'hidden'}`}
+        data-carousel-item={index === currentIndex ? 'active' : ''}
+      >
+        <div className="p-3 overflow-y-auto text-xs md:text-xl max-h-[80vh] max-w-full">{item.content}</div>
       </div>
-    </div>
+    ))}
+  </div>
+  </div>
+  {/* Slider controls */}
+  <button
+    type="button"
+    className="absolute top-0 left-0  z-30 flex items-center justify-center h-full px-1 cursor-pointer group focus:outline-none md:px-4"
+    onClick={handlePrev}
+    aria-label="Previous"
+  >
+    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg
+        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
+      </svg>
+      <span className="sr-only">Previous</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-1 cursor-pointer group focus:outline-none md:px-4"
+    onClick={handleNext}
+    aria-label="Next"
+  >
+    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg
+        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
+      </svg>
+      <span className="sr-only">Next</span>
+    </span>
+  </button>
+</div>
+      </div>
+   
   );
 }
 

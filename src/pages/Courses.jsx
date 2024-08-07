@@ -1,7 +1,12 @@
-import React from "react";
+import React,{useRef} from "react";
 import { dot, icon } from "../assets";
 import { accordion, coursesList,courseDesign } from "../constants";
-import Accordion from "../components/Accordion";
+import {Swiper,SwiperSlide} from "swiper/react"
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import 'swiper/css/free-mode'
+import {FreeMode,Pagination,Navigation} from "swiper/modules"
 import img1 from "/src/assets/icons/Group 7.png"
 import design1 from "../assets/images/design1.png"
 import design2 from "../assets/images/design2.png"
@@ -35,40 +40,95 @@ const CoursesPage = () => {
 
         <div className="mx-10 ">
   
-  {
-    coursesList.map((list)=> (
-      <div>
-        <h1 className="filter-shadow ml-5  text-white font-poppins font-[500] md:text-xl text-xl my-3 tracking-wide md:ml-5">{list.title}</h1>
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4  w-[95%] m-auto text-white max-sm:w-[100%]">
-          {list.courses.map((course)=> (
-             <li className="flex items-start gap-4 justify-start text-white my-8 bg w-full rounded-md px-5 py-8 gradient-3 max-sm:w-full max-sm:my-3">
-             <div className="mt-2">
-               <img src={dot} alt="icon" className="w-20 h-4" />
-             </div>
-             <div>
-               <h3 className="text-xl font-semibold leading-10">
-                 {course.label}
-               </h3>
-               <p className="">{course.description}</p>
-             </div>
-           </li>
-          ))}
-        </ul>
+        {coursesList.map((list, index) => {
+      const prevRef = useRef(null);
+      const nextRef = useRef(null);
+
+      const handleSwiper = (swiper) => {
+        swiper.params.navigation.prevEl = prevRef.current;
+        swiper.params.navigation.nextEl = nextRef.current;
+        swiper.navigation.init();
+        swiper.navigation.update();
+      };
+
+      return (
+        <div key={list.title}>
+          <h1 className="filter-shadow ml-5 text-white font-poppins font-[500] text-xl my-3 tracking-wide">{list.title}</h1>
+          <div className="relative w-[95%] m-auto max-sm:w-[100%]">
+            <Swiper
+              breakpoints={{
+                340: {
+                  slidesPerView: 1,
+                  spaceBetween: 15,
+                },
+                700: {
+                  slidesPerView: 2,
+                  spaceBetween: 15,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 15,
+                },
+              }}
+              freeMode={true}
+              navigation={{
+                nextEl: nextRef.current,
+                prevEl: prevRef.current,
+              }}
+              modules={[FreeMode, Navigation]}
+              className="w-full"
+              onSwiper={handleSwiper}
+            >
+              {list.courses.map((course) => (
+                <SwiperSlide key={course.label}>
+                  <div className="flex flex-col gap-6 group relative text-white rounded-lg px-6 py-8 ">
+                    <li className="flex items-start gap-4 justify-start text-white my-8 w-full rounded-md px-5 py-8 bg-gradient-to-b from-white/[0.15] to-[#656262]/[0.15] max-sm:w-full max-sm:my-3">
+                      <div className="mt-2">
+                        <img src={dot} alt="icon" className="w-20 h-4" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold leading-10">
+                          {course.label}
+                        </h3>
+                        <p>{course.description}</p>
+                      </div>
+                    </li>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div
+              ref={prevRef}
+              className="swiper-button-prev absolute top-1/2 transform -translate-y-1/2 left-1 w-7 h-7 bg-black bg-opacity-50 text-purple flex items-center justify-center rounded-full cursor-pointer z-10"
+            >
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </div>
+            <div
+              ref={nextRef}
+              className="swiper-button-next absolute top-1/2 transform -translate-y-1/2 right-1 w-7 h-7 bg-black bg-opacity-50 text-purple flex items-center justify-center rounded-full cursor-pointer z-10"
+            >
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </div>
         </div>
-    ))
-  }
-         </div>
+      );
+    })}
+  </div>
          
         <h2 className="text-center filter-shadow text-dark font-poppins font-[500] md:text-2xl text-base my-10 tracking-wide">
           What will you learn from this courses
         </h2>
         <div className="container pb-10">
-          <div className=" w-3/4 mx-auto grid grid-cols-2 gap-4 px-4 ">
+          <div className=" w-3/4 mx-auto grid grid-cols-2 gap-3 px-4 b ">
            
-            <img src={design1} className="h-72"  />
-            <img src={design2} className="h-72"  />
-            <img src={design3} className="h-72"  />
-            <img src={design4} className="h-72"  />
+            <img src={design1} className="h-32 ml-2 sm:ml-10 md:m-0 md:h-64 md:ml-1 md:pl-7"  />
+            <img src={design2} className="h-32 mr-3 sm:mr-14 md:m-0 md:h-64 md:mr-2 "  />
+            <img src={design3} className="h-32 ml-2 sm:ml-14 md:m-0 md:h-64 md:ml-14 md:pl-7"  />
+            <img src={design4} className="h-32 md:m-0 md:h-64"  />
            
 
           </div>

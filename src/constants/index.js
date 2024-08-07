@@ -47,16 +47,19 @@ export const courseDesign = [
 ]
 
 export const service = [
+  { label: "Branding" },
   { label: "Logo Design" },
-  { label: "Motion Graphics" },
-  { label: "Label and Sticker Design" },
+  { label: "Website Design" },
   { label: "Poster Design" },
+  { label: "Motion Graphics" },
+  { label: "Packaging Design" },
+  { label: "Label and Sticker Design" },
   { label: "Publication Graphic Design" },
   { label: "Social Media Marketing and Management" },
-  { label: "Packaging Design" },
+  
 
-  { label: "Branding" },
-  { label: "Website Design" },
+  
+  
 ];
 
 export const weDo = [
