@@ -40,6 +40,7 @@ export default {
         customgradient: 'linear-gradient(180deg, rgba(234, 103, 255, 0.48) 0%, rgba(181, 72, 219, 0.6) 28.5%, rgba(139, 56, 205, 0.6) 63%, rgba(94, 11, 159, 0.6) 100%)',
         doublegradient:"linear-gradient(180deg, rgba(192, 23, 196, 0.3) 0%, rgba(139, 56, 205, 0.3) 100%)",
         lineargradient:"linear-gradient(98.23deg, #8B38CD -2.8%, #C017C4 97.1%)",
+        coursegradient:'linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(101, 98, 98, 0.15) 100%)',
 
       },
       borderColor:{

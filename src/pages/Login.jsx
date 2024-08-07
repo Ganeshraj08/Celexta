@@ -20,9 +20,9 @@ const Login = () => {
   return (
     <div className="bg-background">
       <div className="flex  gap-2 justify-center  ">
-        <h6 className="text-pink text-xl font-bold mt-9">log in</h6>
-        <h6 className="text-white text-xl font-bold mt-9">
-          {" "}
+        <h6 className="text-pink text-base font-bold mt-9 md:text-xl">log in</h6>
+        <h6 className="text-white text-base font-bold mt-9 md:text-xl">
+         {" "}
           to start your learning journey with us!
         </h6>
       </div>
