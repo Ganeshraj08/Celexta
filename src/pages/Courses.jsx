@@ -13,13 +13,15 @@ import design2 from "../assets/images/design2.png";
 import design3 from "../assets/images/design3.png";
 import design4 from "../assets/images/design4.png";
 const CoursesPage = () => {
- /*  const prevRefs = useRef([]);
+  const prevRefs = useRef([]);
   const nextRefs = useRef([]);
 
-  useEffect(() => {
-    prevRefs.current = prevRefs.current.slice(0, coursesList.length);
-    nextRefs.current = nextRefs.current.slice(0, coursesList.length);
-  }, [coursesList.length]); */
+  const handleSwiper = (swiper, index) => {
+    swiper.params.navigation.prevEl = prevRefs.current[index];
+    swiper.params.navigation.nextEl = nextRefs.current[index];
+    swiper.navigation.init();
+    swiper.navigation.update();
+  };
   return (
     <section className="w-full bg-background">
       <div className="container pb-10">
@@ -42,20 +44,9 @@ const CoursesPage = () => {
       </div>
 
       <div className="mx-10 ">
-      {coursesList.map((list, index) => {
-      const prevRef = useRef(null);
-      const nextRef = useRef(null);
-
-      const handleSwiper = (swiper) => {
-        swiper.params.navigation.prevEl = prevRef.current;
-        swiper.params.navigation.nextEl = nextRef.current;
-        swiper.navigation.init();
-        swiper.navigation.update();
-      };
-
-      return (
+      {coursesList.map((list, index) => (
         <div key={list.title}>
-          <h1 className="filter-shadow ml-5 text-white font-poppins font-[500] text-xl my-3 tracking-wide">{list.title}</h1>
+          <h1 className="filter-shadow ml-5 text-white font-poppins font-[500] text-center  text-xl my-3 tracking-wide">{list.title}</h1>
           <div className="relative w-[95%] m-auto max-sm:w-[100%]">
             <Swiper
               breakpoints={{
@@ -74,17 +65,17 @@ const CoursesPage = () => {
               }}
               freeMode={true}
               navigation={{
-                nextEl: nextRef.current,
-                prevEl: prevRef.current,
+                nextEl: nextRefs.current[index],
+                prevEl: prevRefs.current[index],
               }}
               modules={[FreeMode, Navigation]}
               className="w-full"
-              onSwiper={handleSwiper}
+              onSwiper={(swiper) => handleSwiper(swiper, index)}
             >
               {list.courses.map((course) => (
                 <SwiperSlide key={course.label}>
-                  <div className="flex flex-col gap-6 group relative text-white rounded-lg px-3 py-4 bg-coursegradient">
-                    <li className="flex items-start gap-4 justify-start text-white my-8 w-full rounded-md px-2 py-3  max-sm:w-full max-sm:my-3">
+                  <div className="flex flex-col gap-6 group relative text-white rounded-lg px-3 py-4 my-4 bg-coursegradient">
+                    <li className="flex items-start gap-4 justify-start text-white my-8 w-full rounded-md px-2 py-3 max-sm:w-full max-sm:my-3">
                       <div className="mt-2">
                         <img src={dot} alt="icon" className="w-20 h-4" />
                       </div>
@@ -100,25 +91,20 @@ const CoursesPage = () => {
               ))}
             </Swiper>
             <div
-              ref={prevRef}
-              className="swiper-button-prev absolute top-1/2 transform -translate-y-1/2 left-3 w-10 h-10 bg-black bg-opacity-50 text-purple flex items-center justify-center rounded-full cursor-pointer z-10"
+              ref={(el) => (prevRefs.current[index] = el)}
+              className="swiper-button-prev absolute top-1/2 transform -translate-y-1/2 left-3 w-10 h-10  flex items-center justify-center rounded-full cursor-pointer z-10"
             >
-              {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
-              </svg> */}
+            
             </div>
             <div
-              ref={nextRef}
-              className="swiper-button-next absolute top-1/2 transform -translate-y-1/2 right-3 w-10 h-10 bg-black bg-opacity-50 text-purple flex items-center justify-center rounded-full cursor-pointer z-10"
+              ref={(el) => (nextRefs.current[index] = el)}
+              className="swiper-button-next absolute top-1/2 transform -translate-y-1/2 right-3 w-10 h-10  flex items-center justify-center rounded-full cursor-pointer z-10"
             >
-              {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-              </svg> */}
+            
             </div>
           </div>
         </div>
-      );
-    })}
+      ))}
 
       </div>
 
