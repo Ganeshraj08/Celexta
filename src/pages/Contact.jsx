@@ -17,15 +17,15 @@ const Contact = () => {
       </div>
       <div className="flex flex-col gap-0 mx-0 pb-4 px-3 items-center justify-center w-full sm:flex-row sm:mx-20 md:px-20">
         <div className=" mx-auto mb-4 mt-12 sm:w-[35%]">
-        <h3 className="font-weight-400 text-base text-white text-center mb-4 rounded-sm">
+          <h3 className="font-weight-400 text-base text-white text-center mb-4 rounded-sm">
             Reach us out!
           </h3>
           <div className="  bg-darkgradient overflow-hidden  shadow-custom-white rounded-xl">
-            <div className="w-full h-40 mb-10 sm:mb-0"></div>
+            {/* <div className="w-full h-40 mb-10 sm:mb-0"></div>
             <h6 className="text-center text-sm text-white mb-4">
               Live map location
-            </h6>
-            <div className=" bg-primary mx-2.5 rounded-sm mb-10 flex-col sm:mb-2 md:mb-2 lg:mb-8 md:flex-row">
+            </h6> */}
+            <div className=" bg-primary m-2.5 rounded-sm  flex-col  md:flex-row">
               <div className="flex flex-col flex-1 p-2 ">
                 <div className="flex gap-2 items-center justify-center">
                   <img
@@ -50,7 +50,7 @@ const Contact = () => {
                     998877665544
                   </h6>
                 </div>
-                  <div className="flex gap-2 items-center">
+                <div className="flex gap-2 items-center">
                   <img
                     src={Envelope}
                     alt="Envelope Icon"
@@ -60,7 +60,7 @@ const Contact = () => {
                   <h6 className="text-white text-sm font-weight-300">
                     clexta@gmail.com
                   </h6>
-                  </div>
+                </div>
               </div>
             </div>
           </div>

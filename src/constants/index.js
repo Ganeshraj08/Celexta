@@ -8,7 +8,7 @@ import course6 from "../assets/images/course6.jpeg"
 export const Nav = [
   { label: "Home", id: "/" },
   { label: "Services", id: "/service" },
-  { label: "Courses", id: "/courses" },
+  // { label: "Courses", id: "/courses" },
   { label: "About us", id: "/about-us" },
   { label: "Contact us", id: "/contact-us" },
 ];

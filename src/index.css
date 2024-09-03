@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.bg-hero{
+  background-image: url("./assets/images/heroBg.png");
+}
 
 .active{
   border-bottom: 3px solid rgb(149, 0, 255);
